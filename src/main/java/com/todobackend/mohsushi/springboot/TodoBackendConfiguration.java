@@ -25,14 +25,4 @@ public class TodoBackendConfiguration implements WebMvcConfigurer {
             .allowedMethods("GET", "POST", "DELETE", "PUT", "PATCH", "OPTIONS")
             ;
   }
-
-  @Bean
-  public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
-    PropertySourcesPlaceholderConfigurer propsConfig
-            = new PropertySourcesPlaceholderConfigurer();
-    propsConfig.setLocation(new ClassPathResource("git.properties"));
-    propsConfig.setIgnoreResourceNotFound(false);
-    propsConfig.setIgnoreUnresolvablePlaceholders(false);
-    return propsConfig;
-  }
 }

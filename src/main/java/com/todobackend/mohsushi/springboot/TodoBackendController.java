@@ -17,28 +17,10 @@ import java.util.stream.StreamSupport;
 @RequestMapping("/todos")
 public class TodoBackendController {
 
-  @Value("${git.build.time}")
-  private String buildTime;
-
-  @Value("${git.build.version}")
-  private String version;
-
-  @Value("${git.commit.id.abbrev}")
-  private String commitId;
-
   private final TodoBackendRepository todoBackendRepository;
 
   public TodoBackendController(TodoBackendRepository todoBackendRepository) {
     this.todoBackendRepository = todoBackendRepository;
-  }
-
-  @GetMapping (path = "/info")
-  public Map<String, String> version() {
-    final Map<String, String> data = new HashMap<>();
-    data.put("version", version);
-    data.put("build-time", buildTime);
-    data.put("commit-id", commitId);
-    return data;
   }
 
   @GetMapping
