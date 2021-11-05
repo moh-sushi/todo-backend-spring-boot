@@ -1,4 +1,4 @@
-This project is an implementation of [Todo-Backend](http://www.todobackend.com/) using [Spring-Boot](https://spring.io/projects/spring-boot) (with spring-mvc and spring-jpa) and [H2-Database](https://www.h2database.com/).
+This project is an implementation of [Todo-Backend](https://www.todobackend.com/) using [Spring-Boot](https://spring.io/projects/spring-boot) (with spring-mvc and spring-jpa) and [H2-Database](https://www.h2database.com/).
 
 ## Heroku
 * deploy link : https://todo-backend-spring-boot.herokuapp.com/todos
